@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* Container */
+  .login-container {
+    background-color: #1e1e1e; /* Dark gray for contrast */
+    border: 2px solid #50c878; /* Emerald green border */
+    border-radius: 10px;
+    width: 350px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Header */
+  .login-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .login-header h1 {
+    font-size: 24px;
+    color: #50c878; /* Emerald green */
+  }
+
+  /* Form */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .login-form label {
+    font-size: 14px;
+    color: #f0f0f0; /* Light white */
+  }
+
+  .login-form input {
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #50c878; /* Emerald green */
+    border-radius: 5px;
+    outline: none;
+    background-color: #121212; /* Darker background */
+    color: white; /* Input text color */
+  }
+
+  .login-form input:focus {
+    border-color: #ff7f50; /* Orange focus */
+  }
+
+  /* Button */
+  .login-form button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #50c878; /* Emerald green */
+    color: black; /* Black text on button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .login-form button:hover {
+    background-color: #ff7f50; /* Orange hover */
+  }
+
+  /* Footer */
+  .login-footer {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .login-footer a {
+    color: #50c878; /* Emerald green links */
+    text-decoration: none;
+  }
+
+  .login-footer a:hover {
+    color: #ff7f50; /* Orange hover */
+  }

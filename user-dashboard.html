@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="css/user-dashboard.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+       <h1>Welcome to Your Dashboard</h1>
+       <p id="welcomeMessage" class="welcome-message"></p>
+    </header>
+    <main>
+    <section class="details">
+      <h2>Your Details:</h2>
+        <div class="detail-items">
+          <p><strong>Email:</strong> <span id="userEmail"></span></p>
+          <p><strong>Role:</strong> <span id="userRole"></span></p>
+         <p><strong>Last Login:</strong> <span id="lastLogin"></span></p>
+       </div>
+    </section>
+
+      <section class="actions">
+          <h2>Account Actions</h2>
+            <div class="actions-list">
+            <button id="editProfileBtn">Edit Profile</button>
+                <button id="changePasswordBtn">Change Password</button>
+                <button id="logoutBtn">Logout</button>
+              </div>
+        </section>
+
+    </main>
+
+
+    <!-- Modal for editing profile -->
+     <div id="profileModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-content">
+           <button id="closeModal" class="close" aria-label="Close modal">×</button>
+         <h3 id="modalTitle">Edit Profile</h3>
+          <div class="modal-body">
+            <label for="editDisplayName">Display Name:</label>
+             <input type="text" id="editDisplayName" placeholder="Your name" />
+             <button id="saveProfileBtn" >Save Profile</button>
+         </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-database-compat.js"></script>
+  <script src="firebase.js"></script>
+  <script src="./user-dashboard.js"></script>
+</body>
+
+</html>

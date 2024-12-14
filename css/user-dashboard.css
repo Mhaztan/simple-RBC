@@ -1,0 +1,133 @@
+/* user-dashboard.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a192f;
+    color: #fff;
+      margin: 0;
+  
+  }
+  .container {
+      max-width: 900px;
+     margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+         min-height: calc(100vh - 120px);
+  }
+  header{
+       margin-bottom: 20px;
+      text-align: center;
+  
+  }
+  main {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  }
+  main section {
+     background-color: #1a1a1a;
+      padding: 20px;
+       border-radius: 8px;
+  }
+  
+  h1, h2 {
+     color: #fff;
+  }
+  
+  .welcome-message{
+      font-size: 1.5em;
+  }
+  
+  .details .detail-items {
+      padding-left: 15px;
+  
+  }
+  .details .detail-items p {
+       margin-bottom: 10px;
+  }
+  .details .detail-items p strong{
+      color: #00a693;
+     margin-right: 5px;
+  }
+  
+  .actions .actions-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  button {
+    background-color: #00a693;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+     margin-right: 10px;
+      width: fit-content;
+  }
+  
+  button:hover {
+    background-color: #007a6a;
+  }
+  /* Modal Styles */
+  .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+      justify-content: center;
+      align-items: center;
+    z-index: 1000;
+  }
+  .modal-content {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 8px;
+     max-width: 500px;
+        position: relative;
+  }
+  .modal-content .close{
+      position: absolute;
+      top: 5px;
+      right: 10px;
+       font-size: 1.5rem;
+      cursor: pointer;
+       color: #fff;
+  }
+  .modal-content .modal-body {
+      display: flex;
+       flex-direction: column;
+       gap: 10px;
+  }
+  .modal-content .modal-body label{
+      color: #00a693;
+  }
+  .modal-content .modal-body input{
+      background-color: #303030;
+      border: none;
+       padding: 10px;
+      color: #fff;
+      border-radius: 5px;
+  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+      .container{
+            padding: 10px;
+      }
+      .actions .actions-list{
+      flex-direction: column;
+      }
+      .actions .actions-list button{
+          margin-right: 0;
+      }
+      main{
+         flex-direction: column;
+          gap: 10px;
+      }
+  }
